@@ -1,0 +1,233 @@
+:root {
+    --gray: #4a5568;
+    --semi-gray : #6C757D;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;;
+    text-align: justify;
+    color: black;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+     .navbar {
+        background: white;
+        height: 70px;
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0   2px 4px 0   rgba(1, 1, 1, 0.1);
+    }
+
+    .nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav > p {
+        color: black;
+        font-size: small;
+        font-weight: 18px;
+    }
+
+    .navbar > h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 700;
+        font-weight: bolder;
+    }
+
+    .hero-container {
+        display: flex;
+        padding: 3% 10%;
+        height: 400px;
+    }
+
+    .hero-container > img {
+        margin: auto;
+    }
+
+    .title-container {
+        padding: 0 14%;
+    }
+    
+    .title-container > div {
+        margin: auto;
+    }
+
+    .title-container h3 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .title-container > .title-footer {
+        display: flex;
+        gap: 42px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .title-footer > .day {
+        font-weight: lighter;
+    }
+
+    .line {
+        padding: 0 22%;
+    }
+
+    .articles {
+        padding: 0 14%;
+        margin-bottom: 8%;
+    }
+
+    button {
+        margin: auto;
+        margin-bottom: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0   4px 8px 0   rgba(1, 1, 1, 0.1);
+        transform: 0.3s;
+        display: flex;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        align-content: center;
+    }
+
+    button:hover {
+        box-shadow: 0   4px 8px 0   rgba(1, 1, 1, 0.2);
+        cursor: pointer;
+    }
+    
+    
+    footer {
+        background: #212529;
+        font-family: 'Poppins', sans-serif;
+        padding: 40px 0 0 0;
+        color: #FBFBFB;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content > h3 {
+        font-size: 1.8rem;
+        font-weight: 400px;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+
+    .footer-content > p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .socials li {
+        margin: 0 10px;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #FFFF;
+    
+    }
+
+    .socials a i {
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    }
+
+    .socials a:hover {
+        color: aqua;
+    }
+
+    .footer-buttom {
+        background: #cecece;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-buttom > p {
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        text-decoration: white;
+    }
+
+    .footer-buttom > span {
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+
+@media screen and (max-width: 500px) {
+    .hero-container {
+        flex-wrap: wrap;
+        height: 100%;
+    } 
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .nav p {
+        font-size: 8px;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .title-container h3 {
+        font-size: 14px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .title-footer p {
+        font-size: 7px;
+    }
+
+    .line {
+        display: none;
+    }
+        
+    .articles p {
+        font-size: 7px;
+    }
+
+
+}
